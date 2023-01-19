@@ -13,9 +13,7 @@ Example output: "I'M 😱 ALMOST 😱 OUT 😱 OF 😱 COFFEE!"
 */
 
 function panic(str) {
-  const textUpperCase = str.toUpperCase() + "!";
-  const arrayText = textUpperCase.split(" ");
-  return arrayText.join(" 😱 ");
+  return str.split(" ").join(" 😱 ").toUpperCase() + "!";
 }
 
 // Test your function
